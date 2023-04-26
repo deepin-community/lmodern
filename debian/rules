@@ -10,9 +10,7 @@ build-indep-stamp:
 	# to the .orig.tar.gz + .diff.gz that this script is not aware of.
 	@newfiles=$$(find . -type f | grep -Ev \
           -e '^\./debian/' \
-	  -e '^\./.git/' \
-	  -e '^\./.github/' \
-	  -e '^\./.gitignore' \
+          -e '^\./.pc/' \
           -e '^\./fonts/type1/public/lm/[^/]*\.pf[bm]$$' \
           -e '^\./fonts/afm/public/lm/[^/]*\.afm$$' \
           -e '^\./fonts/afm/public/lm/[^/]*\.aft$$' \
@@ -38,7 +36,7 @@ build-indep-stamp:
           fi
 
         # Upstream provides <texmf>/fonts/map/dvips/lm/lm.map that should be
-        # equivalent to all the encoding-specific map files in 
+        # equivalent to all the encoding-specific map files in
         # <texmf>/fonts/map/dvips/lm/ but the replacement maps for CM, CS
         # PL and VN fonts. Let's check if this is really the case.
 	@export LC_COLLATE=C \
