@@ -11,6 +11,8 @@ build-indep-stamp:
 	@newfiles=$$(find . -type f | grep -Ev \
           -e '^\./debian/' \
           -e '^\./.pc/' \
+          -e '^\./.obs/' \
+          -e '^\./.github/' \
           -e '^\./fonts/type1/public/lm/[^/]*\.pf[bm]$$' \
           -e '^\./fonts/afm/public/lm/[^/]*\.afm$$' \
           -e '^\./fonts/afm/public/lm/[^/]*\.aft$$' \

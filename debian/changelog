@@ -1,3 +1,9 @@
+lmodern (2.005-1deepin1) unstable; urgency=medium
+
+  * fix obs package error
+
+ -- xiangzelong <xiangzelong@deepin.org>  Wed, 26 Apr 2023 16:43:54 +0800
+
 lmodern (2.005-1) unstable; urgency=low
 
   New upstream release
